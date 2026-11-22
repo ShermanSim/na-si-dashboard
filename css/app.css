@@ -20,3 +20,24 @@
 .rf-tie{color:var(--muted);margin-left:2px;cursor:help}
 .rf-new{font-size:11px;font-weight:700;color:var(--navy);background:var(--soft);padding:1px 6px;border-radius:6px}
 @media(max-width:760px){.chart.rf-tall{height:380px}#rf-h-q{width:100%}}
+/* HK Southbound tab (sb-): own sub-nav; Weekly/Daily, SI and retail sub-navs hidden there */
+body.tab-sb #frequency,body.tab-sb nav.subnav:not(.sb-subnav),body:not(.tab-sb) nav.sb-subnav{display:none}
+.chart.sb-tall{height:540px}
+.sb-read p{margin:3px 0;font-size:14px}.sb-read p.note{font-size:12px;margin-top:8px}
+.sb-t{font-size:13px}.sb-t td,.sb-t th{padding:6px 7px}
+.sb-t th:nth-child(2),.sb-t td:nth-child(2),.sb-t th:nth-child(3),.sb-t td:nth-child(3),.sb-t th:nth-child(4),.sb-t td:nth-child(4){text-align:left}
+.sb-traded-t th:nth-child(4),.sb-traded-t td:nth-child(4),.sb-tn th:nth-child(4),.sb-tn td:nth-child(4){text-align:right}
+.sb-t td.name{max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+td.sb-theme{max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}td.sb-theme a{color:var(--muted)}
+#sb-moves h3,#sb-crowd h3,#sb-traded h3{font-size:14px;margin:4px 0 8px}.sb-stack>div+div{margin-top:18px}
+.sb-theme-t{font-size:13px}.sb-theme-t td,.sb-theme-t th{padding:5px 8px}.sb-theme-t th:first-child,.sb-theme-t td:first-child{text-align:left}.sb-theme-t tfoot td{font-weight:700;background:var(--soft)}
+.sb-bar-h{text-align:center}.sb-bar-c{width:28%;min-width:140px}
+.sb-bar{position:relative;height:14px;background:linear-gradient(var(--border),var(--border)) 50% 0/1px 100% no-repeat}
+.sb-bar i{position:absolute;top:1px;height:12px;border-radius:2px}.sb-bar i.pos{left:50%;background:var(--in)}.sb-bar i.neg{right:50%;background:var(--out)}.sb-bar.wk i{opacity:.45}
+.sb-groups{row-gap:26px}.sb-group h3{margin:0 0 2px}.sb-glegend{margin:4px 0 6px}.sb-glegend a{color:inherit}.chart.sb-gchart{height:280px}
+.sb-crowd-tools{flex-wrap:wrap;justify-content:flex-start;gap:8px 18px}
+#sb-hits{position:absolute;top:100%;left:0;right:0;z-index:5;max-height:330px;overflow:auto;background:var(--card);box-shadow:0 8px 24px #0003;border-radius:8px}#sb-hits button{display:block;text-align:left;width:100%;border:0;border-radius:0;padding:10px}#sb-hits button.active{background:var(--soft)}
+#sb-builder .search-row select{max-width:220px}#sb-add-total{white-space:nowrap}
+#sb-h-q{width:220px;padding:5px 9px;border-radius:7px;font-size:13px}#sb-h-controls .card-head{flex-wrap:wrap}#sb-h-asof button:disabled{opacity:.4;cursor:default}
+.sb-hold-t th:nth-child(3),.sb-hold-t td:nth-child(3){text-align:left}.sb-h-strip strong{font-size:26px}
+@media(max-width:760px){.chart.sb-tall{height:380px}#sb-h-q{width:100%}.sb-bar-c{min-width:90px}}
